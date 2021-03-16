@@ -6,7 +6,7 @@
                 {{value.step}}
             </div>
             <div class="card-body">
-                <h1 class="card-title">{{sumResult}}</h1>
+                <h1 class="card-title text-center">{{sumResult}}</h1>
                 <button class="btn btn-primary btn-block" @click.prevent="stepHolder">RUN</button>
                 <a class="btn-block badge badge-warning" v-text="'Step Counts : '+increment"></a>
                 <a href="#" class="badge badge-danger btn-block" @click.prevent="removeStep">Remove Step</a>
@@ -60,7 +60,7 @@
             resetSteps() {
                 this.sumResult = 0;
                 this.steps = [0];
-                this.increment = 0;
+                this.increment = 1;
             },
             removeStep() {
                 this.$emit('remove', this.index);
