@@ -1,5 +1,3 @@
-# yasna
-
 ## Project setup
 ```
 npm install
